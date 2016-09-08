@@ -1,0 +1,4 @@
+target 'WeChat' do
+pod 'XMPPFramework'
+pod 'SDWebImage', '~>3.8'
+end

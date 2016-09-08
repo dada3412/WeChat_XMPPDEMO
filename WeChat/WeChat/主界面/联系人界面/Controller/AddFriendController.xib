@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddFriendController">
+            <connections>
+                <outlet property="userTextField" destination="xg7-rS-aYG" id="CV6-7D-pmr"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入帐号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xg7-rS-aYG">
+                    <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Orb-QH-PmA"/>
+                        <constraint firstAttribute="width" constant="400" id="uCR-u3-NFm"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Orb-QH-PmA"/>
+                            <exclude reference="uCR-u3-NFm"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="Orb-QH-PmA"/>
+                            <exclude reference="uCR-u3-NFm"/>
+                        </mask>
+                    </variation>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nev-04-ztn">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <color key="backgroundColor" red="0.17715989636625626" green="0.64756944444444442" blue="0.064090845754176798" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="OFL-ib-eeW"/>
+                        <constraint firstAttribute="height" constant="30" id="QN7-7i-Xmz"/>
+                    </constraints>
+                    <state key="normal" title="用户查找"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="OFL-ib-eeW"/>
+                            <exclude reference="QN7-7i-Xmz"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="OFL-ib-eeW"/>
+                            <include reference="QN7-7i-Xmz"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="userSearch" destination="-1" eventType="touchUpInside" id="z0n-Pa-pWh"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="xg7-rS-aYG" secondAttribute="trailing" id="3cQ-UT-Lsi"/>
+                <constraint firstItem="Nev-04-ztn" firstAttribute="top" secondItem="xg7-rS-aYG" secondAttribute="bottom" constant="20" id="GbI-CJ-DZz"/>
+                <constraint firstItem="Nev-04-ztn" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="KRJ-zx-XeS"/>
+                <constraint firstItem="xg7-rS-aYG" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="33" id="fKa-wZ-Tqf">
+                    <variation key="widthClass=compact" constant="80"/>
+                </constraint>
+                <constraint firstItem="xg7-rS-aYG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="qjF-Di-Wbg"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="xg7-rS-aYG"/>
+                    <exclude reference="Nev-04-ztn"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="3cQ-UT-Lsi"/>
+                    <exclude reference="fKa-wZ-Tqf"/>
+                    <exclude reference="qjF-Di-Wbg"/>
+                    <exclude reference="GbI-CJ-DZz"/>
+                    <exclude reference="KRJ-zx-XeS"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=compact">
+                <mask key="subviews">
+                    <include reference="xg7-rS-aYG"/>
+                    <include reference="Nev-04-ztn"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="3cQ-UT-Lsi"/>
+                    <include reference="fKa-wZ-Tqf"/>
+                    <include reference="qjF-Di-Wbg"/>
+                    <include reference="GbI-CJ-DZz"/>
+                    <include reference="KRJ-zx-XeS"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="356" y="149"/>
+        </view>
+    </objects>
+</document>
